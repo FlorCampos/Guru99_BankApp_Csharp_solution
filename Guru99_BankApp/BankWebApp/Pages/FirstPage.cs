@@ -50,5 +50,10 @@ namespace BankWebApp.Pages
             }
         }
 
+        public bool IsVisibleTitle {
+            get => Driver.Title.Contains("Guru99 Bank Manager HomePage");
+            internal set { }
+        }
+
     }
 }
