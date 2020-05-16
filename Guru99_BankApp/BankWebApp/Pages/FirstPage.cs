@@ -16,7 +16,7 @@ namespace BankWebApp.Pages
         private IWebElement txtUserID => Driver.FindElement(By.XPath("//input[@name='uid']"));
         private IWebElement txtPassword => Driver.FindElement(By.XPath("//input[@name='password']"));
         private IWebElement btnLogin => Driver.FindElement(By.XPath("//input[@name='btnLogin']"));
-        private IWebElement lblMessageHomePage => Driver.FindElement(By.XPath("//td[starts-with(text(),'Manger')]"));
+        //private IWebElement lblMessageHomePage => Driver.FindElement(By.XPath("//td[starts-with(text(),'Manger')]"));
         internal void GoTo()
         {
             var url = "http://www.demo.guru99.com/V4/";
