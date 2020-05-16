@@ -17,7 +17,7 @@ namespace BankWebApp.Tests
             firstPage.GoTo();
             firstPage.LoginWithRightCredentials();
             Assert.IsTrue(firstPage.IsLoaded, "The Home Page did not open successfully");
-           //EXPECTED CONDITIONS
+           //EXPECTED 
         }
     }
 }
