@@ -18,7 +18,7 @@ namespace BankWebApp.Tests
             firstPage.LoginWithRightCredentials();
             Assert.IsTrue(firstPage.IsLoaded, "The Home Page did not open successfully"); //Expected conditions
             Assert.IsTrue(firstPage.IsVisibleTitle,"The title is not visible");
-           
+            //Hide user and pwd
         }
     }
 }

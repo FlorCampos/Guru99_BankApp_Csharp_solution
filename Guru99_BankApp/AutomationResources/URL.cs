@@ -8,7 +8,7 @@ namespace AutomationResources
 {
     public static class URL
     {
-        public static string MainUrl => "http://www.demo.guru99.com/V4/";
+        public static string MainUrl => "http://www.demo.guru99.com/V4/"; 
 
     }
 }
