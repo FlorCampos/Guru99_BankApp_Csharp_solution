@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 //using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
+using AutomationResources;
 
 namespace BankWebApp.Pages
 {
@@ -19,8 +20,7 @@ namespace BankWebApp.Pages
         //private IWebElement lblMessageHomePage => Driver.FindElement(By.XPath("//td[starts-with(text(),'Manger')]"));
         internal void GoTo()
         {
-            var url = "http://www.demo.guru99.com/V4/";
-            Driver.Navigate().GoToUrl(url);
+            Driver.Navigate().GoToUrl(URL.MainUrl);
         }
 
         public void LoginWithRightCredentials()
