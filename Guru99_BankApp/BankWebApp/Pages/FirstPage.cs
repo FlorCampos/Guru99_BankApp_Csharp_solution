@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+//using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
 namespace BankWebApp.Pages
 {
@@ -41,6 +39,8 @@ namespace BankWebApp.Pages
             {
                 try
                 {
+                    var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(5));
+                    var lblMessageHomePage = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//td[starts-with(text(),'Manger')]")));
                     return lblMessageHomePage.Displayed;
                 }
                 catch (NoSuchElementException)

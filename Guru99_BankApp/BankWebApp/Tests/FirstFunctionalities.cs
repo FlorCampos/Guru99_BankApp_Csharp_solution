@@ -3,7 +3,7 @@ using System.Text;
 using System.Collections.Generic;
 using BankWebApp.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using OpenQA.Selenium.Support.UI;
 
 namespace BankWebApp.Tests
 {
